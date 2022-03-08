@@ -1,0 +1,22 @@
+.upper_card_container_right{
+    float: right;
+    position: fixed;
+    top: 100px;
+    right: 215px;
+    width: 250px;
+    height: 220px;
+}
+.card_upper_right{
+    position: absolute;
+    width: 230px;
+    height: 200px;
+    background: white;
+    margin-top: 10px;
+    margin-left: 10px;
+    opacity: 0.7;
+    border-radius: 10px;
+    transition: transform 1s;
+}
+.card_upper_right:hover{
+    transform: scale(1.08,1.1);
+}
