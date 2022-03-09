@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>博客首页</title>
+    <link rel="stylesheet" href="博客首页.css" type="text/css">
+    <script>
+        window.onload = () =>{
+            const h1 = document.querySelector('h1')
+            document.addEventListener('scroll',(e) =>{
+                let scrolled = document.documentElement.scrollTop/
+                    (document.documentElement.scrollHeight -
+                        document.documentElement.clientHeight)
+                console.log(scrolled)
+                h1.style.setProperty('--percentage',
+                `${scrolled*100}%`)
+            })
+        }
+    </script>
+</head>
+<body>
+     <div class="sticky">
+         <h1>当你真心渴望某件事时,<br/>&nbsp;&nbsp;整个宇宙会联合起来帮助你。</h1>
+     </div>
+</body>
+</html>
